@@ -9,6 +9,7 @@ end
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
 	config.font = wezterm.font_with_fallback { 'CaskaydiaCove Nerd Font', 'Fira Code', 'DengXian', }
 	config.default_prog = { 'pwsh', '-NoLogo' }
+	config.font_size = 11
 else
 	config.font = wezterm.font_with_fallback { 'FiraCode Nerd Font', 'DengXian', }
 end
