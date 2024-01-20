@@ -15,7 +15,7 @@ else
 end
 
 config.color_scheme = 'Colors (base16)'
-config.window_background_opacity = 0.8
+config.window_background_opacity = 1
 
 return config
 
