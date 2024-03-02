@@ -25,6 +25,11 @@ config.keys = {
       direction = 'Down',
       size = { Percent = 10 },
     },
+  },
+  {
+    key = 'w',
+    mods = 'CTRL|SHIFT|ALT',
+    action = wezterm.action.CloseCurrentPane { confirm = false },
   }
 }
 
