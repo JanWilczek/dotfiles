@@ -23,7 +23,7 @@ config.keys = {
     mods = 'CTRL|SHIFT|ALT',
     action = wezterm.action.SplitPane {
       direction = 'Down',
-      size = { Percent = 10 },
+      size = { Percent = 20 },
     },
   },
   {
