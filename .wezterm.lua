@@ -7,7 +7,7 @@ if wezterm.config_builder then
 end
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
-  config.font = wezterm.font_with_fallback { 'CaskaydiaCove Nerd Font', 'Fira Code', 'DengXian', 'JetBrains Mono' }
+  config.font = wezterm.font_with_fallback { 'CaskaydiaCove Nerd Font', 'Fira Code', 'DengXian', 'JetBrains Mono', 'Noto Color Emoji', 'Symbols Nerd Font Mono', 'Segoe UI Emoji', 'FiraCode Nerd Font' }
   config.default_prog = { 'pwsh', '-NoLogo' }
   config.font_size = 11
 else
