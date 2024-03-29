@@ -116,7 +116,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 OMZ_EDITOR=nvim
 alias zshconfig="$OMZ_EDITOR ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ohmyzsh="$OMZ_EDITOR ~/.oh-my-zsh"
+alias cmb="cmake --build build"
+alias cmcpd="cmake --preset default"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
