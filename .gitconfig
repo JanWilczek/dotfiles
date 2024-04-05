@@ -1,6 +1,5 @@
 [core]
 	editor = code --wait
-	autocrlf = true
   pager = delta
 [user]
 	email = 24981875+JanWilczek@users.noreply.github.com
@@ -10,8 +9,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[safe]
-	directory = D:/Dokumenty/Inzynierka/EdenSynth
 [push]
 	autoSetupRemote = true
 [submodule]
@@ -35,9 +32,10 @@
   hunk-header-file-style = red
   hunk-header-line-number-style = "#067a00"
   hunk-header-style = file line-number syntax
-[credential]
-	helper = /usr/local/bin/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [pull]
 	rebase = false
+[include]
+  path = .gitconfig-local
+
