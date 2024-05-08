@@ -12,7 +12,8 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   config.font_size = 11
   config.cell_width = 0.9
 else
-  config.font = wezterm.font_with_fallback { 'FiraCode Nerd Font', 'DengXian', }
+  -- config.font = wezterm.font_with_fallback { 'FiraCode Nerd Font', 'DengXian', }
+  config.font = wezterm.font_with_fallback { { family = 'CaskaydiaCove Nerd Font' } }
 end
 
 config.color_scheme = 'Colors (base16)'
