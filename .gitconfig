@@ -32,10 +32,10 @@
   hunk-header-file-style = red
   hunk-header-line-number-style = "#067a00"
   hunk-header-style = file line-number syntax
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 [pull]
 	rebase = false
 [include]
   path = .gitconfig-local
 
+[credential "https://dev.azure.com"]
+  useHttpPath = true
