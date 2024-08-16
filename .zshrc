@@ -121,10 +121,23 @@ alias ohmyzsh="$OMZ_EDITOR ~/.oh-my-zsh"
 alias cmb="cmake --build build"
 alias cmcpd="cmake --preset default"
 
+get_changed_and_untracked() {
+  git status -s | awk '"'"'{print $2}'"'"'
+}
+
+# TODO
+# preview_git_file() {
+#   if git ls-files --error-unmatch $@ > /dev/null 2>&1; then
+#       git diff $@
+#   else
+#       bat $@
+#   fi
+# }
+
 # Preview and git add changed git files
 fgs() {
   preview="git diff $@ --color=always -- {-1}"
-  git add $(git diff $@ --name-only | fzf -m --ansi --preview $preview)
+  git add $(get_changed_and_untracked | fzf -m --ansi --preview $preview)
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
