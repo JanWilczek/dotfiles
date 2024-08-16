@@ -120,7 +120,12 @@ alias zshconfig="$OMZ_EDITOR ~/.zshrc"
 alias ohmyzsh="$OMZ_EDITOR ~/.oh-my-zsh"
 alias cmb="cmake --build build"
 alias cmcpd="cmake --preset default"
-alias fgs='git add $(git status -s | fzf | awk '"'"'{print $2}'"'"')'
+
+# Preview and git add changed git files
+fgs() {
+  preview="git diff $@ --color=always -- {-1}"
+  git add $(git diff $@ --name-only | fzf -m --ansi --preview $preview)
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
