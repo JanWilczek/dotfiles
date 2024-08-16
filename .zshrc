@@ -137,7 +137,7 @@ get_changed_and_untracked() {
 # Preview and git add changed git files
 fgs() {
   preview="git diff $@ --color=always -- {-1}"
-  git add $(get_changed_and_untracked | fzf -m --ansi --preview $preview)
+  git add $(get_changed_and_untracked | fzf -m --ansi --preview $preview | awk '{print $2}')
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
