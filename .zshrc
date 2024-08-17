@@ -125,18 +125,15 @@ get_changed_and_untracked() {
   git status -s | awk '"'"'{print $2}'"'"'
 }
 
-# TODO
-# preview_git_file() {
-#   if git ls-files --error-unmatch $@ > /dev/null 2>&1; then
-#       git diff $@
-#   else
-#       bat $@
-#   fi
-# }
-
 # Preview and git add changed git files
 fgs() {
-  preview="git diff $@ --color=always -- {-1}"
+  preview='
+    if [[ {-2} ==  "??" ]]; then
+        bat -f {-1}
+    else
+        git diff --color=always -- {-1}
+    fi
+  '
   git add $(get_changed_and_untracked | fzf -m --ansi --preview $preview | awk '{print $2}')
 }
 
