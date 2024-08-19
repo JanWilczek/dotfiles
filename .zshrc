@@ -137,5 +137,7 @@ fgs() {
   git add $(get_changed_and_untracked | fzf -m --ansi --preview $preview | awk '{print $2}')
 }
 
+export BAT_THEME="Visual Studio Dark+"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
