@@ -120,6 +120,7 @@ alias zshconfig="$OMZ_EDITOR ~/.zshrc"
 alias ohmyzsh="$OMZ_EDITOR ~/.oh-my-zsh"
 alias cmb="cmake --build build"
 alias cmcpd="cmake --preset default"
+alias ctp="ctest --preset"
 
 get_changed_and_untracked() {
   git status -s | awk '"'"'{print $2}'"'"'
