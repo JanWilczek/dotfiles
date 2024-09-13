@@ -122,6 +122,9 @@ alias cmb="cmake --build build"
 alias cmcpd="cmake --preset default"
 alias ctp="ctest --preset"
 
+# Transmit UTF-8 characters via tmux by default
+alias tmux='tmux -u'
+
 get_changed_and_untracked() {
   git status -s | awk '"'"'{print $2}'"'"'
 }
