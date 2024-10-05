@@ -142,6 +142,13 @@ fgs() {
 }
 
 export BAT_THEME="Visual Studio Dark+"
+export PATH="$PATH:/Users/jawi/dev/flutter/bin"
+
+# aliases
+alias python=python3
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
