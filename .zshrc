@@ -121,6 +121,8 @@ alias ohmyzsh="$OMZ_EDITOR ~/.oh-my-zsh"
 alias cmb="cmake --build build"
 alias cmcpd="cmake --preset default"
 alias ctp="ctest --preset"
+alias python=python3
+alias wm="nvim ~/workingmemory.md"
 
 # Transmit UTF-8 characters via tmux by default
 alias tmux='tmux -u'
@@ -144,8 +146,6 @@ fgs() {
 export BAT_THEME="Visual Studio Dark+"
 export PATH="$PATH:/Users/jawi/dev/flutter/bin"
 
-# aliases
-alias python=python3
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
