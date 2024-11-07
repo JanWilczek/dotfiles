@@ -1,5 +1,5 @@
 [core]
-	editor = code --wait
+	editor = nvim -f
   pager = delta
 [user]
 	email = 24981875+JanWilczek@users.noreply.github.com
