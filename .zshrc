@@ -144,6 +144,9 @@ fgs() {
   git add $(get_changed_and_untracked | fzf -m --ansi --preview $preview | awk '{print $2}')
 }
 
+# Change lazygit config directory
+export XDG_CONFIG_HOME="$HOME/.config"
+
 export BAT_THEME="Visual Studio Dark+"
 export PATH="$PATH:/Users/jawi/dev/flutter/bin"
 
