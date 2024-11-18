@@ -123,6 +123,7 @@ alias cmcpd="cmake --preset default"
 alias ctp="ctest --preset"
 alias python=python3
 alias wm="nvim ~/workingmemory.md"
+alias lg="lazygit"
 
 # Transmit UTF-8 characters via tmux by default
 alias tmux='tmux -u'
