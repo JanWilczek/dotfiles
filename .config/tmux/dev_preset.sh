@@ -7,16 +7,20 @@ session_name=$(basename "$PWD")
 tmux new-session -d -s "$session_name"
 
 # Rename the first window and start Neovim
-tmux rename-window -t "$session_name":0 'Editor'
+tmux rename-window -t "$session_name":0 'editor'
 tmux send-keys -t "$session_name" 'nvim .' C-m
 
-# Create a second window with two panes
-tmux new-window -t "$session_name" -n 'Shells'
+# Create a second window with lazygit
+tmux new-window -t "$session_name" -n 'lazygit'
+tmux send-keys -t "$session_name" 'lazygit' C-m
 
-# Split the second window into two panes
+# Create a third window with two panes
+tmux new-window -t "$session_name" -n 'shells'
+
+# Split the window into two panes
 tmux split-window -h
 
-# Select the first window (optional)
+# Select the first window
 tmux select-window -t "$session_name":0
 
 # Attach to the session
