@@ -127,7 +127,9 @@ alias lg="lazygit"
 alias devsession="~/.config/tmux/dev_preset.sh"
 
 # bat is sometimes installed as batcat
-alias bat="batcat"
+if [[ $(uname) != "Darwin" ]] && command -v batcat &> /dev/null; then
+    alias bat='batcat'
+fi
 
 # Transmit UTF-8 characters via tmux by default
 alias tmux='tmux -u'
