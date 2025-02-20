@@ -12,7 +12,7 @@
 [push]
 	autoSetupRemote = true
 [submodule]
-  recurse = true
+  recurse = false
 [interactive]
   diffFilter = delta --color-only --features=interactive
 
