@@ -175,3 +175,5 @@ export PATH="$HOME/opt/x-tools/armv6-rpi-linux-gnueabihf/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f "/Users/jawi/.ghcup/env" ] && . "/Users/jawi/.ghcup/env" # ghcup-env
