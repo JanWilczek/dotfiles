@@ -131,8 +131,8 @@ alias ctp="ctest --preset"
 alias ctpd="ctest --preset default"
 alias ctpr="ctest --preset release"
 alias python=python3
-WORKING_MEMORY_FILE_PATH="/Users/jawi/Library/CloudStorage/Dropbox"
-alias wm="nvim ${WORKING_MEMORY_FILE_PATH}/workingmemory.md"
+WORKING_MEMORY_FILE_PATH="/Users/jawi/Library/CloudStorage/Dropbox/workingmemory.md"
+alias wm="nvim ${WORKING_MEMORY_FILE_PATH}"
 alias lg="lazygit"
 alias devsession="~/.config/tmux/dev_preset.sh"
 
