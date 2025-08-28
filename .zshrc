@@ -182,3 +182,6 @@ export PATH="$HOME/opt/x-tools/armv6-rpi-linux-gnueabihf/bin:$PATH"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [ -f "/Users/jawi/.ghcup/env" ] && . "/Users/jawi/.ghcup/env" # ghcup-env
+
+# Created by `pipx` on 2025-07-25 13:37:50
+export PATH="$PATH:/Users/jawi/.local/bin"
