@@ -122,11 +122,15 @@ source $ZSH/oh-my-zsh.sh
 OMZ_EDITOR=nvim
 alias zshconfig="$OMZ_EDITOR ~/.zshrc"
 alias ohmyzsh="$OMZ_EDITOR ~/.oh-my-zsh"
-alias cmb="cmake --build build"
-alias cmbd="cmake --build --preset default"
+
+# CMake-related aliases
+alias cmcp="cmake --preset"
 alias cmcpd="cmake --preset default"
-alias cmbr="cmake --build --preset release"
 alias cmcpr="cmake --preset release"
+alias cmb="cmake --build build"
+alias cmbp="cmake --build --preset"
+alias cmbd="cmake --build --preset default"
+alias cmbr="cmake --build --preset release"
 alias ctp="ctest --preset"
 alias ctpd="ctest --preset default"
 alias ctpr="ctest --preset release"
