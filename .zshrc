@@ -134,11 +134,15 @@ alias cmbr="cmake --build --preset release"
 alias ctp="ctest --preset"
 alias ctpd="ctest --preset default"
 alias ctpr="ctest --preset release"
+
 alias python=python3
 export WORKING_MEMORY_FILE_PATH="/Users/jawi/Library/CloudStorage/Dropbox/workingmemory.md"
 alias wm="nvim ${WORKING_MEMORY_FILE_PATH}"
 alias lg="lazygit"
 alias devsession="~/.config/tmux/dev_preset.sh"
+
+# Make removing files safer
+alias rm="rm -iv"
 
 # bat is sometimes installed as batcat
 if [[ $(uname) != "Darwin" ]] && command -v batcat &> /dev/null; then
