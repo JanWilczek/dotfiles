@@ -144,6 +144,8 @@ alias devsession="~/.config/tmux/dev_preset.sh"
 # Make removing files safer
 alias rm="rm -iv"
 
+export OBSIDIAN_PATH="/Users/jawi/Documents/default"
+
 # bat is sometimes installed as batcat
 if [[ $(uname) != "Darwin" ]] && command -v batcat &> /dev/null; then
     alias bat='batcat'
@@ -178,9 +180,6 @@ export PATH="$PATH:/Users/jawi/dev/flutter/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git/*" || find .'
-
-# Needed for RaspberryPi cross-compilation
-export PATH="$HOME/opt/x-tools/armv6-rpi-linux-gnueabihf/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
