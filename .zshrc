@@ -136,8 +136,11 @@ alias ctpd="ctest --preset default"
 alias ctpr="ctest --preset release"
 
 alias python=python3
-export WORKING_MEMORY_FILE_PATH="/Users/jawi/Library/CloudStorage/Dropbox/workingmemory.md"
-alias wm="nvim ${WORKING_MEMORY_FILE_PATH}"
+export SYNCED_NOTES_PATH="/Users/jawi/Library/CloudStorage/GoogleDrive-jawitrle@gmail.com/My Drive/Notes"
+# export WORKING_MEMORY_FILE_PATH="/Users/jawi/Library/CloudStorage/Dropbox/workingmemory.md"
+export WORKING_MEMORY_FILE_PATH="${SYNCED_NOTES_PATH}/workingmemory.md"
+alias wm="nvim '${WORKING_MEMORY_FILE_PATH}'"
+alias nt="cd '${SYNCED_NOTES_PATH}' && nvim ."
 alias lg="lazygit"
 alias devsession="~/.config/tmux/dev_preset.sh"
 
