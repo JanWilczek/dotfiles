@@ -191,3 +191,6 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git/*" || find .'
 
 # Created by `pipx` on 2025-07-25 13:37:50
 export PATH="$PATH:/Users/jawi/.local/bin"
+
+# Added by Antigravity
+export PATH="/Users/jawi/.antigravity/antigravity/bin:$PATH"
