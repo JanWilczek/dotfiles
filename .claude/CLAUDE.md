@@ -76,6 +76,7 @@ Global instructions for Claude Code. Project-level `CLAUDE.md` files override th
   - Classes, structs, enums: `CamelCase`
   - Functions, variables, constants, constexpr, enum constants: `camelBack`
   - Private/protected members: `camelBack_` (trailing underscore)
+- Documentation comments: Doxygen JavaDoc-style
 
 ### Testing
 
