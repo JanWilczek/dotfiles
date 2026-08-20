@@ -39,6 +39,7 @@ Global instructions for Claude Code. Project-level `CLAUDE.md` files override th
 - **Branch naming:** `jan/feature-or-task-name`
 - **Workflow:** rebase `main`/`develop` onto feature branch; merge feature back into `develop` or `main`
 - Use pre-commit on every project using [my `.pre-commit-config.yaml`](https://raw.githubusercontent.com/JanWilczek/audio-plugin-template/refs/heads/main/.pre-commit-config.yaml)
+- Never commit yourself without explicit permission (unless specified otherwise in the project's CLAUDE.md)
 
 ## Environment
 
