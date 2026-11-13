@@ -6,7 +6,7 @@ Global instructions for Claude Code. Project-level `CLAUDE.md` files override th
 
 - Name: Jan
 - Timezone: Europe/Warsaw (no fixed working hours)
-- Role: freelance audio programmer and educator — research, design, and implement audio algorithms, plugins, and apps; teach via blog, YouTube, podcast, and courses
+- Role: C++ programmer, audio programmer and educator — research, design, and implement audio algorithms, plugins, and apps; teach via blog, YouTube, podcast, and courses
 - Brands: [thewolfsound.com](https://thewolfsound.com), [wolfsoundacademy.com](https://wolfsoundacademy.com), [LinkedIn](https://www.linkedin.com/in/jan-wilczek-audio-programmer/)
 - Languages: **C++** and **Python** primary; **Rust**, **C#**, **Kotlin** secondary
 - Respond in **English** always
@@ -19,7 +19,7 @@ Global instructions for Claude Code. Project-level `CLAUDE.md` files override th
 - Emojis: **sparingly**
 - Tone: **professional** — no puns, jokes, or jargon when working on code
 - **Always ask** when unsure rather than guessing
-- **Challenge bad ideas** — push back with reasoning, don't defer
+- **Challenge bad ideas** — push back with reasoning, don't defer. Disagree as a briliant co-founder would, challenge me.
 
 ## Workflow rules
 
@@ -31,15 +31,14 @@ Global instructions for Claude Code. Project-level `CLAUDE.md` files override th
   - **Never** install system-wide or user-wide dependencies without asking (project-local deps are fine)
   - **Always ask** before modifying files outside the current repo
   - **Never** delete files
-- **Commit automatically** when a task completes, but **never push**
 
 ## Git
 
 - **Commit messages:** [Conventional Commits](https://www.conventionalcommits.org/)
-- **Branch naming:** `jan/feature-or-task-name`
+- **Branch naming:** `claude/feature-or-task-name`
 - **Workflow:** rebase `main`/`develop` onto feature branch; merge feature back into `develop` or `main`
-- Use pre-commit on every project using [my `.pre-commit-config.yaml`](https://raw.githubusercontent.com/JanWilczek/audio-plugin-template/refs/heads/main/.pre-commit-config.yaml)
-- Never commit yourself without explicit permission (unless specified otherwise in the project's CLAUDE.md)
+- Use pre-commit on every project if `.pre-commit-config.yaml` present.
+- Never commit or push yourself without explicit permission (unless specified otherwise in the project's CLAUDE.md)
 
 ## Environment
 
@@ -55,8 +54,6 @@ Global instructions for Claude Code. Project-level `CLAUDE.md` files override th
 
 ### Standard & libraries
 
-- **C++23**
-- **JUCE 8.0.12**, **Boost** available
 - DSP: write in-house; reuse via [wolfsound-dsp-utils](https://github.com/JanWilczek/wolfsound-dsp-utils) instead of duplicating
 
 ### Style
@@ -86,18 +83,13 @@ Global instructions for Claude Code. Project-level `CLAUDE.md` files override th
 - **Always write tests by default.** Attempt **TDD**: failing test first, then implementation.
 - Coverage target: **≥90%**, don't chase 100%
 - Test **rigorously** — edge cases, not just happy paths
+- When fixing a bug, tests are read-only.
 
 ### Build & CI
 
-- **Modern target-based CMake**, min version **3.31**
+- **Modern target-based CMake**.
 - CI: **GitHub Actions** only
 - No self-hosted runners
-
-### Audio/DSP rules (real-time safety)
-
-- Audio thread: **no allocations, no system calls, no locking**
-- Sample type: **`float`**
-- Plugin targets: **VST3, AU, AAX, LV2**
 
 ## Python
 
@@ -109,9 +101,10 @@ Global instructions for Claude Code. Project-level `CLAUDE.md` files override th
 ## C# / .NET
 
 - **Idiomatic C#** (including brace style on a new line, per C# convention)
-- **Spaces, not tabs**
+- Spaces, not tabs
 
 ## Rust, Kotlin
 
 - Follow idiomatic conventions for each language
 - Spaces over tabs
+
