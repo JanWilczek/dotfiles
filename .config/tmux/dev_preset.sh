@@ -19,6 +19,11 @@ tmux new-window -t "$session_name" -n 'shells'
 
 # Split the window into two panes
 tmux split-window -h
+tmux select-pane -t "$session_name:shells.0"
+
+# Create a fourth window with Claude Code
+tmux new-window -t "$session_name" -n 'claude'
+tmux send-keys -t "$session_name" 'claude' C-m
 
 # Select the first window
 tmux select-window -t "$session_name":0
