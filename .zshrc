@@ -194,3 +194,7 @@ export PATH="$PATH:/Users/jawi/.local/bin"
 
 # Added by Antigravity
 export PATH="/Users/jawi/.antigravity/antigravity/bin:$PATH"
+
+# NeoVim on Ubuntu
+export PATH="$PATH:/opt/nvim/"
+
